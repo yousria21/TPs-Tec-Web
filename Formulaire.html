@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mon premiere formulaire</title>
+</head>
+<body>
+<h1> Votre Avis Nous Intéresse </h1>
+<Style>
+.container{
+Display: flex;
+}
+</style>
+<div class=container>
+<fieldset>
+<legend>Informations Personnelles</legend>
+<ol>
+<li>Nom <input type="text" name="Nom" maxlength="35"/><br/></li>
+<li>Date de naissance <input name="Date de naissance" type="date" required="" maxlength="15" /><br/></li>
+<li>Site <input type="text" name="salaire" id="salaire" placeholder="http://SiteWeb.com" maxlength="15" /><br/></li>
+<li>Emploi <select name="Emploi" maxlength="25"><option value =""><br/>
+<option value ="Administrateur">Administrateur </option>
+<option value ="Emploiyé">Emploiyé </option>
+<option value ="Enseignant">Enseignant </option>
+<option value ="Chercheur">Chercheur </option>
+</select> </li>
+<li>Aprox. salaire Annuel</br></li>
+<input type="number" name="salaire" placeholder="§" id="score" maxlength="25"/><br/>
+</fieldset>
+<fieldset>
+<legend>Information de Contact</legend>
+<ol>
+<li>Adresse Line 1</li>
+<input type="address" name="Adresse Line 1" id="Adresse Line 1" value=""/><br/>
+<li>Adresse Line 2</li><input type="address" name="Adresse Line 2" id="Adresse Line 2" value=""/><br/>
+<tr>
+<li><td> Pays</td><td>
+<select name="distination" id="distination"><option value ="">
+</li>
+</option>
+<option value ="Algérie"> Algérie </option>
+<option value="Tunisie"> Tunisie </option>
+<option value ="Allemanie">Allemanie</option>
+<option value ="Maroc">Australie</option>
+</select>
+</td>
+</tr><br>
+<li><td> Tel </td>
+<input type="number" name="Tel" id="Tel" placeholder="Alg: +213 33..."/><br/>
+</li>
+<li>Courriel<input type="email" name="Courriel" id="Courriel" required="" maxlength="25"/><br/>
+</li>
+</fieldset>
+</div>
+<div class="Préférences">
+<h2>Préférences </h2>
+<p>Choisir une couleur <input type="color" required=""/> </p>
+Sur une échelle de 1 à 10, quel est votre degré d'enthousiasme pour HTML5?
+<input type="range" required="" /><br>
+<input type="submit" value="Envoyer">
+</div>
+</body>
+</html>
